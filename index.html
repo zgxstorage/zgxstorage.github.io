@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+  
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>智光秀 APP 下载</title>
+  <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+  <link rel="stylesheet" href="../plugins/SUI-Mobile-dev/dist/css/sm.min.css">
+  <link rel="stylesheet" href="../plugins/SUI-Mobile-dev/dist/css/sm-extend.min.css">
+
+  <!-- 引入 jQuery Mobile 样式 -->
+  <link rel="stylesheet" href="./plugins/jquery.mobile-1.4.5/jquery.mobile-1.4.5.min.css" type="text/html" >
+
+  <!-- 引入 jQuery 库 -->
+  <script src="./plugins/jquery-3.4.1/jquery-3.4.1.min.js" type="text/html"></script>
+  <!-- 引入 jQuery Mobile 库 -->
+  <script src="./plugins/jquery.mobile-1.4.5/jquery.mobile-1.4.5.min.js" type="text/html"></script>
+  <!--如何在开发环境（浏览器端）直接运行es6？es6已经发布一段时间了，
+    现在大部分是在node.js环境运行，或者通过babel编译之后运行。babel-browser主要实现用户能够在浏览器上直接运行es6语法。-->
+  <script src="./plugins/babel-browser-king1.0.2/babel-browser.min.js" type="text/html"></script>
+  
+
+</head>
+
+<body>
+
+    <header class="bar bar-nav">
+
+        <h1 class="title" style="text-align: center"><img src="./android/images/icon.png" style="width: 20px;height: 20px;vertical-align: middle;" > 智光秀</h1>
+      
+    </header>
+
+    <div class="content">
+    
+        <div class="content-padded">
+
+            <h5 class="h5">版本</h5>
+
+            <p> 1.0 </p>
+
+            <h5 class="h5">预览</h5>
+
+            <ul id="main_ul">
+
+                <li>
+                    <img src="./android/images/img0.jpg" />
+                </li>
+
+                <li>
+                    <img src="./android/images/img1.jpg" />
+                </li>
+                
+                <li>
+                    <img src="./android/images/img2.jpg" />
+                </li>
+
+            </ul>
+
+            <p style="text-transform:none;">
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;智光秀是一款以蓝牙广播为信号，控制灯的亮度、色温和RGB的APP。
+            </p>
+
+            <h5 class="h5">下载安装</h5>
+
+            <div style="text-align: left;">
+              <p>安卓apk直接下载通道:&nbsp;&nbsp;<a href="./android/apk/app-release.apk" download="智光秀.apk" target="_blank">点击下载</a></p>
+              <p>ios下载安装直连通道:&nbsp;&nbsp;<a href="https://apps.apple.com/cn/app/%E6%99%BA%E5%85%89%E7%A7%80/id1560619036" target="_blank">点击下载</a></p>
+            </div>
+
+            <div style="float: right;">
+                <div style="text-align: center;font-size: 22px;color: dimgrey;margin-bottom: 16px">
+                    扫描二维码下载APP客户端
+                </div>
+                <div class="down">
+                    <img src="./android/images/pf_qr_ios.png" style="width: 5rem;height:5rem;margin: auto;display: flex" >
+                    <p style="text-align: center;color: darksalmon;"><img src="./images/android.png" style="width: 20px;height:20px;vertical-align: middle;">&nbsp;&nbsp;Android&nbsp;&nbsp;下载</p>
+                </div>
+      
+                <div class="down">
+                    <img src="./ios/images/pf_qr_ios.png" style="width: 5rem;height:5rem;margin: auto;display: flex" >
+                    <p style="text-align: center;color: darksalmon;"><img src="./images/iphone.png" style="width: 20px;height:20px;vertical-align: middle;">&nbsp;&nbsp;ios&nbsp;&nbsp;下载</p>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+<style type="text/css" >
+
+  .down {
+    float: left;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    align-content:center;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space:nowrap;  /* ul中的内容不换行 */
+  }
+
+  .content-padded h5{
+
+    color: rgb(70, 70, 70);
+    font-size: 18pt;
+    margin: 0px;
+    padding: 0px;
+  }
+
+  p{
+
+    font-size: 13pt;
+    color: rgb(75, 75, 75);
+
+  }
+
+  ul{
+			width: 100%;
+			height: 100%;
+      overflow-x: scroll;
+			overflow-y: hidden;
+			white-space:nowrap;  /* ul中的内容不换行 */
+    }
+    
+  ul li {
+    display: inline-block;
+  }
+    
+  ul li img {
+    width: 8rem;
+    height: auto;
+    margin: auto;
+  }
+
+</style>
+
+</body>
+</html>
